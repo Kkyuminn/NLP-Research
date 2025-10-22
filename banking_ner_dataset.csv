@@ -1,0 +1,82 @@
+text,entity_text,entity_label,entity_category,is_well_known
+"Transfer $5000 from John Doe to account 123-456-789 at DBS Bank","DBS Bank","ORG","Bank",TRUE
+"Transfer $5000 from John Doe to account 123-456-789 at DBS Bank","John Doe","PERSON","Customer",TRUE
+"Transfer $5000 from John Doe to account 123-456-789 at DBS Bank","5000","MONEY","Amount",TRUE
+"Payment received from Twitter for advertising services rendered","Twitter","ORG","Social Media Company",TRUE
+"Invoice issued to Temasek Polytechnic for training services","Temasek Polytechnic","ORG","Educational Institution",FALSE
+"Customer feedback from National University of Singapore alumni program","National University of Singapore","ORG","University",TRUE
+"Wire transfer to OCBC Bank account for property purchase","OCBC Bank","ORG","Bank",TRUE
+"Payment to Grab Holdings for employee transportation allowance","Grab Holdings","ORG","Tech Company",TRUE
+"Remittance to Nanyang Technological University scholarship fund","Nanyang Technological University","ORG","University",TRUE
+"Transaction with Singapore General Hospital for medical insurance claim","Singapore General Hospital","ORG","Hospital",TRUE
+"Transfer to Ministry of Manpower for work permit fees","Ministry of Manpower","ORG","Government Agency",TRUE
+"Payment from Shopee Singapore for merchant settlement","Shopee Singapore","ORG","E-commerce Company",TRUE
+"Invoice to Tong Eng Brothers Pte Ltd for construction materials","Tong Eng Brothers Pte Ltd","ORG","Construction Company",FALSE
+"Payment received from Haw Par Corporation for consulting fees","Haw Par Corporation","ORG","Pharmaceutical Company",FALSE
+"Transfer to Breadtalk Group for catering services","Breadtalk Group","ORG","Food & Beverage Company",FALSE
+"Remittance to Tan Tock Seng Hospital for medical treatment","Tan Tock Seng Hospital","ORG","Hospital",TRUE
+"Payment to Singapore Polytechnic for course enrollment","Singapore Polytechnic","ORG","Educational Institution",TRUE
+"Wire transfer from Sea Limited for software licensing","Sea Limited","ORG","Tech Company",TRUE
+"Transaction with Changi General Hospital emergency services","Changi General Hospital","ORG","Hospital",TRUE
+"Payment to Institute of Technical Education for vocational training","Institute of Technical Education","ORG","Educational Institution",TRUE
+"Transfer from PropertyGuru Pte Ltd for advertising partnership","PropertyGuru Pte Ltd","ORG","Real Estate Tech Company",FALSE
+"Invoice to Razer Inc for gaming hardware procurement","Razer Inc","ORG","Tech Company",TRUE
+"Payment to Singapore Management University executive program","Singapore Management University","ORG","University",TRUE
+"Remittance to Kwong Wai Shiu Hospital for charitable donation","Kwong Wai Shiu Hospital","ORG","Hospital",FALSE
+"Transfer to Lazada Singapore for e-commerce services","Lazada Singapore","ORG","E-commerce Company",TRUE
+"Payment from RedMart by Lazada for grocery delivery","RedMart by Lazada","ORG","Retail Company",FALSE
+"Wire transfer to NTUC FairPrice for corporate bulk purchase","NTUC FairPrice","ORG","Retail Company",TRUE
+"Transaction with Facebook Singapore for digital marketing","Facebook Singapore","ORG","Social Media Company",TRUE
+"Payment to Google Asia Pacific for cloud services","Google Asia Pacific","ORG","Tech Company",TRUE
+"Transfer to Amazon Web Services for infrastructure hosting","Amazon Web Services","ORG","Tech Company",TRUE
+"Invoice issued to Keppel Corporation for marine engineering","Keppel Corporation","ORG","Industrial Company",TRUE
+"Payment from SingTel for telecommunications services","SingTel","ORG","Telecommunications Company",TRUE
+"Remittance to StarHub for mobile plan subscription","StarHub","ORG","Telecommunications Company",TRUE
+"Transfer to M1 Limited for corporate data plan","M1 Limited","ORG","Telecommunications Company",TRUE
+"Payment to Certis Cisco for security services","Certis Cisco","ORG","Security Services Company",TRUE
+"Wire transfer from CapitaLand for property management fees","CapitaLand","ORG","Real Estate Company",TRUE
+"Transaction with Mapletree Logistics Trust for warehouse rental","Mapletree Logistics Trust","ORG","Real Estate Investment Trust",TRUE
+"Payment to ComfortDelGro for corporate transportation","ComfortDelGro","ORG","Transportation Company",TRUE
+"Transfer to SMRT Corporation for transit services","SMRT Corporation","ORG","Transportation Company",TRUE
+"Invoice to Sheng Siong Group for supermarket supplies","Sheng Siong Group","ORG","Retail Company",FALSE
+"Payment from Great Eastern Holdings for insurance settlement","Great Eastern Holdings","ORG","Insurance Company",TRUE
+"Remittance to AIA Singapore for life insurance premium","AIA Singapore","ORG","Insurance Company",TRUE
+"Transfer to Prudential Singapore for investment plan","Prudential Singapore","ORG","Insurance Company",TRUE
+"Payment to Koufu Group for food court rental","Koufu Group","ORG","Food & Beverage Company",FALSE
+"Wire transfer from Yeo Hiap Seng for beverage distribution","Yeo Hiap Seng","ORG","Food & Beverage Company",FALSE
+"Transaction with Old Chang Kee for franchise fees","Old Chang Kee","ORG","Food & Beverage Company",FALSE
+"Payment to Ya Kun Kaya Toast for catering services","Ya Kun Kaya Toast","ORG","Food & Beverage Company",FALSE
+"Transfer to Toast Box for franchise agreement","Toast Box","ORG","Food & Beverage Company",FALSE
+"Invoice issued to Khong Guan Biscuit Factory for supplies","Khong Guan Biscuit Factory","ORG","Food Manufacturing Company",FALSE
+"Payment from Netflix Singapore for content licensing","Netflix Singapore","ORG","Entertainment Company",TRUE
+"Remittance to Spotify Singapore for music streaming subscription","Spotify Singapore","ORG","Entertainment Company",TRUE
+"CEO Helen Wong announced OCBC Bank quarterly earnings report","Helen Wong","PERSON","CEO",TRUE
+"CEO Helen Wong announced OCBC Bank quarterly earnings report","OCBC Bank","ORG","Bank",TRUE
+"Customer Robert Tan submitted housing loan application","Robert Tan","PERSON","Customer",TRUE
+"Account manager Alice Lim processed wire transfer request","Alice Lim","PERSON","Employee",TRUE
+"Beneficiary Mary Chen received remittance payment","Mary Chen","PERSON","Customer",TRUE
+"Director Tan Chong Meng approved credit facility","Tan Chong Meng","PERSON","Executive",TRUE
+"Transfer amount SGD 10000.00 credited to savings account","10000.00","MONEY","Amount",TRUE
+"Account balance S$2500 as of statement closing date","2500","MONEY","Amount",TRUE
+"Payment of USD 5000 for international wire transfer","5000","MONEY","Amount",TRUE
+"Invoice total $15000.50 payable within 30 days","15000.50","MONEY","Amount",TRUE
+"Credit card charge SGD 450.75 at merchant outlet","450.75","MONEY","Amount",TRUE
+"Loan disbursement S$250000 for property purchase","250000","MONEY","Amount",TRUE
+"Payment due on 15-Jan-2025 for outstanding invoice","15-Jan-2025","DATE","Transaction Date",TRUE
+"Transaction completed on 01/10/2024 at branch office","01/10/2024","DATE","Transaction Date",TRUE
+"Statement period from 01-Sep-2024 to 30-Sep-2024","01-Sep-2024","DATE","Period Start",TRUE
+"Statement period from 01-Sep-2024 to 30-Sep-2024","30-Sep-2024","DATE","Period End",TRUE
+"Loan maturity date 31-Dec-2030 for mortgage facility","31-Dec-2030","DATE","Maturity Date",TRUE
+"Direct debit scheduled for 5th of every month","5th","DATE","Recurring Date",TRUE
+"Wire transfer to Thailand Krung Thai Bank beneficiary","Thailand","GPE","Country",TRUE
+"Wire transfer to Thailand Krung Thai Bank beneficiary","Krung Thai Bank","ORG","Bank",FALSE
+"Remittance from Singapore to Malaysia recipient account","Singapore","GPE","Country",TRUE
+"Remittance from Singapore to Malaysia recipient account","Malaysia","GPE","Country",TRUE
+"Payment to vendor in Hong Kong for trade finance","Hong Kong","GPE","Country",TRUE
+"Customer residing at 123 Orchard Road Singapore 238858","Orchard Road","LOC","Street",TRUE
+"Customer residing at 123 Orchard Road Singapore 238858","Singapore","GPE","Country",TRUE
+"Branch located at Raffles Place financial district","Raffles Place","LOC","Location",TRUE
+"Transaction at Marina Bay Sands integrated resort","Marina Bay Sands","FAC","Facility",TRUE
+"Account opened at Changi Business Park branch","Changi Business Park","LOC","Location",TRUE
+"Payment to Indonesia for import trade settlement","Indonesia","GPE","Country",TRUE
+"Transfer from United States correspondent bank","United States","GPE","Country",TRUE

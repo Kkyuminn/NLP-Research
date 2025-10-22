@@ -1,0 +1,134 @@
+╔════════════════════════════════════════════════════════════════════╗
+║                 NLP EVALUATION PROJECT STRUCTURE                   ║
+║              Separated by NLP Approach (Reorganized)               ║
+╚════════════════════════════════════════════════════════════════════╝
+
+📂 Risk-analysis/
+│
+├─── 🔬 EVALUATION SCRIPTS (One per NLP approach)
+│    │
+│    ├── evaluate_spacy.py ⚡
+│    │   ├─ Model: en_core_web_md
+│    │   ├─ Speed: 4ms per document
+│    │   ├─ Accuracy: 67.9%
+│    │   └─ Output: results_spacy.json
+│    │
+│    ├── evaluate_zero_shot.py ⭐
+│    │   ├─ Model: facebook/bart-large-mnli
+│    │   ├─ Speed: 500-1000ms per entity
+│    │   ├─ Accuracy: 85-90% (estimated)
+│    │   ├─ Handles: Unknown entities!
+│    │   └─ Output: results_zero_shot.json
+│    │
+│    ├── evaluate_finbert.py 💰
+│    │   ├─ Model: ProsusAI/finbert
+│    │   ├─ Speed: 50-100ms per document
+│    │   ├─ Accuracy: 82-88% (estimated)
+│    │   ├─ Specialty: Finance-specific
+│    │   └─ Output: results_finbert.json
+│    │
+│    └── evaluate_compare.py ��
+│        ├─ Runs: All 3 approaches
+│        ├─ Creates: Comparison table
+│        └─ Output: comparison_results_*.csv
+│
+├─── 🛠️ SHARED UTILITIES
+│    │
+│    └── utils_nlp.py
+│        ├─ load_ground_truth_dataset()
+│        ├─ print_dataset_stats()
+│        ├─ print_results_by_category()
+│        ├─ print_results_by_familiarity()
+│        ├─ calculate_overall_accuracy()
+│        └─ save_results_to_json()
+│
+├─── 📊 DATASET
+│    │
+│    ├── banking_ner_dataset.csv (81 examples)
+│    │   ├─ 51 ORG entities
+│    │   ├─ 6 PERSON entities
+│    │   ├─ 7 MONEY entities
+│    │   ├─ 6 DATE entities
+│    │   ├─ 7 GPE entities
+│    │   ├─ 3 LOC entities
+│    │   └─ 1 FAC entity
+│    │
+│    └── banking_ner_dataset_backup.csv (backup)
+│
+├─── 📚 DOCUMENTATION
+│    │
+│    ├── SUMMARY.md ⭐ START HERE!
+│    ├── QUICK_REFERENCE.md (Command cheatsheet)
+│    ├── FILE_ORGANIZATION.md (This structure explained)
+│    ├── README.md (Full project docs)
+│    └── NLP_LIBRARY_COMPARISON.md (Deep dive)
+│
+├─── 🗄️ LEGACY FILES (Reference)
+│    │
+│    ├── evaluate_baseline.py (original)
+│    ├── evaluate_advanced.py (Phase 2 attempt)
+│    ├── semantic_text.py (NLP exploration)
+│    ├── output.txt (Phase 1 results)
+│    └── phase2_results.txt (empty)
+│
+└─── 📦 ARCHIVE
+     │
+     └── archive/
+         └── banking_similarity_dataset.csv
+
+╔════════════════════════════════════════════════════════════════════╗
+║                        HOW TO USE                                  ║
+╚════════════════════════════════════════════════════════════════════╝
+
+🚀 Quick Commands:
+   
+   # Test individual approach
+   python evaluate_spacy.py         # Fastest (4ms)
+   python evaluate_zero_shot.py     # Best for unknowns
+   python evaluate_finbert.py       # Finance-specific
+   
+   # Compare all approaches
+   python evaluate_compare.py       # Full comparison
+
+📊 Expected Outputs:
+   
+   results_spacy.json               # spaCy results
+   results_zero_shot.json           # Zero-Shot results
+   results_finbert.json             # FinBERT results
+   comparison_results_*.csv         # Comparison table
+
+╔════════════════════════════════════════════════════════════════════╗
+║                     KEY IMPROVEMENTS                               ║
+╚════════════════════════════════════════════════════════════════════╝
+
+✅ Clean Separation - Each NLP approach in its own file
+✅ No Duplication - Shared utilities in utils_nlp.py
+✅ Independent Testing - Test any approach separately
+✅ Easy Comparison - evaluate_compare.py orchestrates all
+✅ Well Documented - 5 markdown files + code comments
+✅ Extensible - Easy to add new approaches
+
+╔════════════════════════════════════════════════════════════════════╗
+║                      FILE DEPENDENCIES                             ║
+╚════════════════════════════════════════════════════════════════════╝
+
+evaluate_spacy.py ────┐
+                      │
+evaluate_zero_shot.py ├──────> utils_nlp.py
+                      │
+evaluate_finbert.py ──┘
+
+evaluate_compare.py ──> subprocess calls above 3 scripts
+
+╔════════════════════════════════════════════════════════════════════╗
+║                        NEXT STEPS                                  ║
+╚════════════════════════════════════════════════════════════════════╝
+
+1. ✅ Files separated by NLP approach
+2. ⏭️ Run: python evaluate_zero_shot.py
+3. ⏭️ Run: python evaluate_compare.py
+4. ⏭️ Analyze comparison results
+5. ⏭️ Choose best approach or build hybrid
+6. ⏭️ Production deployment
+
+🎉 Project reorganization complete!

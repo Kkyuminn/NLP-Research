@@ -1,0 +1,99 @@
+/Applications/Temasek Polytechnic/KM-MP/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+======================================================================
+PHASE 1: ENTITY CLASSIFICATION EVALUATION - SPACY BASELINE
+======================================================================
+Python: /Applications/Temasek Polytechnic/KM-MP/.venv/bin/python
+spaCy version: 3.8.7
+
+📂 Loading dataset: banking_ner_dataset.csv
+✅ Loaded 51 labeled examples
+   - 51 unique entities
+   - 24 entity categories
+   - 37 well-known entities
+   - 14 unknown/local entities
+
+🔧 Loading spaCy model: en_core_web_md
+✅ Model loaded successfully
+
+======================================================================
+ENTITY EXTRACTION EVALUATION
+======================================================================
+
+✅ Entities Found: 48/51 (94.1%)
+❌ Entities Missed: 3
+
+🔍 Examples of Missed Entities:
+  Expected: 'Twitter'
+  Text: Payment received from Twitter for advertising services rendered...
+  Found: []
+
+  Expected: 'Grab Holdings'
+  Text: Payment to Grab Holdings for employee transportation allowance...
+  Found: []
+
+  Expected: 'ComfortDelGro'
+  Text: Payment to ComfortDelGro for corporate transportation...
+  Found: []
+
+
+======================================================================
+ENTITY CLASSIFICATION EVALUATION
+======================================================================
+
+📊 Accuracy by Entity Category:
+Category                            Total    Correct  Accuracy  
+----------------------------------------------------------------------
+Amount                              1        1        100.0%
+Bank                                2        2        100.0%
+Construction Company                1        1        100.0%
+Customer                            1        1        100.0%
+E-commerce Company                  2        0        0.0%
+Educational Institution             3        1        33.3%
+Entertainment Company               2        2        100.0%
+Food & Beverage Company             6        4        66.7%
+Food Manufacturing Company          1        1        100.0%
+Government Agency                   1        1        100.0%
+Hospital                            4        4        100.0%
+Industrial Company                  1        1        100.0%
+Insurance Company                   3        3        100.0%
+Pharmaceutical Company              1        1        100.0%
+Real Estate Company                 1        1        100.0%
+Real Estate Investment Trust        1        1        100.0%
+Real Estate Tech Company            1        1        100.0%
+Retail Company                      3        2        66.7%
+Security Services Company           1        0        0.0%
+Social Media Company                2        1        50.0%
+Tech Company                        5        3        60.0%
+Telecommunications Company          3        3        100.0%
+Transportation Company              2        1        50.0%
+University                          3        3        100.0%
+
+📊 Accuracy by Entity Familiarity:
+Type                                Total    Correct  Accuracy  
+----------------------------------------------------------------------
+Well-known entities                 37       29       78.4%
+Unknown/Local entities              14       10       71.4%
+
+======================================================================
+🎯 OVERALL CLASSIFICATION ACCURACY: 76.5%
+======================================================================
+
+======================================================================
+SPEED BENCHMARK
+======================================================================
+
+⏱️  Processed 50 documents in 0.23 seconds
+⚡  Average time per document: 4.6 ms
+🚀  Throughput: 217.6 documents/second
+
+======================================================================
+📋 SUMMARY - SPACY BASELINE RESULTS
+======================================================================
+Entity Extraction Accuracy:     94.1%
+Entity Classification Accuracy: 76.5%
+Processing Speed:               4.6 ms/document
+Throughput:                     217.6 docs/second
+
+✅ Phase 1 baseline evaluation complete!
+======================================================================

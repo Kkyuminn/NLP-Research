@@ -1,0 +1,11 @@
+sentence1,sentence2,similarity_score,use_case
+"Wire transfer to account 001-234-567","Transfer funds to acct 001234567",4.5,deduplication
+"Credit card payment $500","Debit card charge $500",3.0,duplicate_detection
+"Loan application approved","Account statement request",1.0,different_documents
+"Payment received from DBS","DBS Bank payment confirmed",4.8,same_transaction
+"Customer John Doe at 123 Main St","Client J. Doe residing at 123 Main Street",4.2,entity_matching
+"Invoice #12345 due $2500","Invoice 12345 amount owing 2500.00",4.7,invoice_matching
+"Fraudulent transaction detected","Suspicious activity flagged",3.8,fraud_detection
+"KYC document uploaded","Know Your Customer form submitted",4.0,document_classification
+"Account balance $10000","Current balance: ten thousand dollars",4.5,amount_normalization
+"Transfer to Thailand account","Remittance to Thai bank account",4.3,international_transfer
